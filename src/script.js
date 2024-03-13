@@ -13,12 +13,12 @@ function generatePoem(event) {
   let themeInput = document.querySelector("#search");
   let apiKey = "82atb6o4834371cad1102b496a40f6fb";
   let context =
-    "You are a brilliant comedic poet. Please be incredibly funny. Keep the poem to 4 lines. You must display each line on a new line of HTML text.";
+    "You are a brilliant comedic poet. Please be incredibly funny. Not not include a title. Keep the poem to 4 lines. You must display each line on a new line of HTML text.";
   let prompt = `Write me a unique and hilarious poem about ${themeInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let poemBox = document.querySelector("#poem");
-  poemBox.innerHTML = "Poem incoming...";
+  poemBox.innerHTML = `<div class="blink">Poem about ${themeInput.value} incoming...</div>`;
 
   axios.get(apiUrl).then(displayPoem);
 }
