@@ -16,41 +16,46 @@
     <title>AI Funny Poem Generator by KL</title>
   </head>
   <body>
-    <header>
-      <h1>AI Funny Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Funny Poem Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of your funny poem..."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>Poem will be generated <br />and displayed here...</div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of your funny poem..."
+            required
+            autocomplete="off"
+            class="search"
+            id="search"
+          />
+          <input type="submit" class="submit" id="submit" />
+        </form>
+        <div class="poem" id="poem">
+          Poem will be generated <br />and displayed here...
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/katelormor" target="_blank">Kate Lormor</a>
-      open sourced on
-      <a
-        href="https://github.com/katelormor/SheCodes-AI-Add-on"
-        target="_blank"
-      >
-        GitHub</a
-      >
-      and hosted on
-      <a
-        href="https://shecodes-ai-generator-add-on.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/katelormor" target="_blank">Kate Lormor</a>
+        open sourced on
+        <a
+          href="https://github.com/katelormor/SheCodes-AI-Add-on"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        and hosted on
+        <a
+          href="https://shecodes-ai-generator-add-on.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
 
     <script src="src/script.js"></script>
   </body>
